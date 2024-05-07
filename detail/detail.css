@@ -49,7 +49,7 @@ header #logout_link,
 header a {
     cursor: pointer;
     color: #fff;
-    text-decoration: none; /*loại bỏ gach chan*/
+    text-decoration: none;
 }
 
 header #logout_link:hover,
@@ -79,7 +79,7 @@ header .search-btn {
     cursor: pointer;
 }
 
-/* Navigation styles */
+
 nav {
     display: flex;
     align-items: center;
@@ -109,7 +109,6 @@ nav .logo {
     font-size: 24px;
     padding: 10px;
     pointer-events: none;
-    /* huỷ bỏ sự kiện a */
 }
 
 nav .title1 a:hover {
