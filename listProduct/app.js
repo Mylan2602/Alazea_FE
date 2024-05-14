@@ -19,15 +19,15 @@ const loginIcon = document.getElementById("login_link")
 const profileIcon = document.getElementById("profile_link")
 const logoutIcon = document.getElementById("logout_link")
 
-profileIcon.innerHTML = userInfo.id ? `
+profileIcon.innerHTML = userInfo?.id ? `
 <i class="fas fa-user"></i>
-${userInfo.name}
+${userInfo?.name}
 ` : ""
 
-cartIcon.style.display = userInfo.id ? "inline-block" : "none"
-loginIcon.style.display = userInfo.id ? "none" : "inline-block"
-profileIcon.style.display = userInfo.id ? "inline-block" : "none"
-logoutIcon.style.display = userInfo.id ? "inline-block" : "none"
+cartIcon.style.display = userInfo?.id ? "inline-block" : "none"
+loginIcon.style.display = userInfo?.id ? "none" : "inline-block"
+profileIcon.style.display = userInfo?.id ? "inline-block" : "none"
+logoutIcon.style.display = userInfo?.id ? "inline-block" : "none"
 
 
 const categoryWrapperElm = document.querySelector('.category-wrapper');
